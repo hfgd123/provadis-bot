@@ -1,1 +1,5 @@
-config.json
+# Credentials config file
+src/configs/Credentials.json
+
+# Dependencies
+node_modules/*
