@@ -1,5 +1,5 @@
 const { Client, Events, GatewayIntentBits, ActivityType } = require('discord.js');
-const { token } = require('./configs/Credentials.json');
+const { Credentials } = require('./configs/Credentials.json');
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
@@ -12,4 +12,4 @@ client.once(Events.ClientReady, readyClient => {
     });
 });
 
-client.login(token.DISCORD);
+client.login(Credentials.DISCORD);
